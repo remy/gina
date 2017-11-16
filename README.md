@@ -1,8 +1,6 @@
 # Gina: A Glitch CLI
 
-1. Anon user (or token from existing account) `POST https://api.glitch.com/users/anon` => JSON { persistentToken }
-2. Create a project: `POST https://api.glitch.com/projects?authorization=${ persistentToken }` => JSON { id, name }
-3. Create secure socket: `wss://api.glitch.com/hushed-frog/ot?token=${ persistentToken }`
+This is (an experimental) command line tool to upload a project to Glitch (based on an undocumented API) and return a URL to the live server.
 
 ## Installation & usage
 
@@ -53,6 +51,13 @@ source /Users/remy/.bashrc
 Now you can run `gina` without the token defined (as above).
 
 ## Internals
+
+1. Anon user (or token from existing account) `POST https://api.glitch.com/users/anon` => JSON { persistentToken }
+2. Create a project: `POST https://api.glitch.com/projects?authorization=${ persistentToken }` => JSON { id, name }
+3. Create secure socket: `wss://api.glitch.com/hushed-frog/ot?token=${ persistentToken }`
+4. Delete original files in project
+5. Glob all local files (ignoring based on `.gitignore`) and upload
+6. Listen to the glitch log and wait for dep install and listening
 
 ### WebSocket API
 
