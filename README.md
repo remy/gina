@@ -65,7 +65,7 @@ Now you can run `gina` without the token defined (as above).
 Documents down:
 
 ```json
-[{"response_type":"document","id":"15107826537bca4ee0-e18c-gggg-99fa-fa696c5c7e86","path":"server.js","content":...","version":1,"broadcast":{}}]
+[{"response_type":"document","id":"15107826537bca4ee0-e18c-gggg-99fa-fa696c5c7e86","path":"server.js","content":"...","version":1,"broadcast":{}}]
 ```
 
 #### Delete file
