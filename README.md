@@ -2,6 +2,8 @@
 
 This is (an experimental) command line tool to upload a project to Glitch (based on an undocumented API) and return a URL to the live server.
 
+![gina example](https://user-images.githubusercontent.com/13700/32903128-2285c592-caec-11e7-806b-a72b696c718d.gif)
+
 ## Installation & usage
 
 Via npm to install the `gina` command line tool:
