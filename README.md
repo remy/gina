@@ -6,6 +6,8 @@ This is (an experimental) command line tool to upload a project to Glitch (based
 
 ## Installation & usage
 
+**Note: requires node 8 to run**.
+
 Via npm to install the `gina` command line tool:
 
 ```bash
