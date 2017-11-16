@@ -1,0 +1,27 @@
+{
+  "name": "@remy/gina",
+  "version": "0.1.0",
+  "description": "A Glitch CLI deploy tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "bin": {
+    "gina": "./index.js"
+  },
+  "keywords": ["glitch", "cli"],
+  "author": "Remy Sharp",
+  "license": "MIT",
+  "dependencies": {
+    "@remy/envy": "^1.0.1",
+    "debug": "^3.1.0",
+    "gitignore-globs": "^0.1.1",
+    "glob": "^7.1.2",
+    "node-fetch": "^1.7.3",
+    "uuid": "^3.1.0",
+    "ws": "^3.3.1"
+  },
+  "devDependencies": {
+    "jest": "^21.2.1"
+  }
+}
